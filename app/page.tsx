@@ -2,7 +2,7 @@ import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from '@/components';
 import { fuels, yearsOfProduction } from '@constants';
 import { HomeProps } from '@types';
 import { fetchCars } from '@utils';
-
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 export default async function Home({ searchParams }: HomeProps) {
     const allCars = await fetchCars({
         manufacturer: searchParams.manufacturer || '',
